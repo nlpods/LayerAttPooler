@@ -67,10 +67,10 @@ class AttentionLayer(nn.Module):
 
     def forward(self, source_pooler_outputs, target_outputs):
         target_pooler_output_list = []
-        concated = target_outputs
-        num_target_outputs = len(concated)
-        concated = torch.stack(concated, dim=1)
         for idx, source_pooler_output in enumerate(source_pooler_outputs):
+            concated = target_outputs
+            num_target_outputs = len(concated)
+            concated = torch.stack(concated, dim=1)
             
             K = self.key(concated)
             V = self.value(concated)

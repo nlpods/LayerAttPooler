@@ -28,7 +28,7 @@ bash download_dataset.sh
 ```
 
 ## Training
-(Using Multi-GPU `run_sup_layerattnpooler.sh`.)
+(Using Multi-GPU `run_sup_layerattnpooler.sh`)
 ```bash
 python train.py \
     --model_name_or_path bert-base-uncased \

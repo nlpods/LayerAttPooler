@@ -11,8 +11,6 @@ import random
 from datasets import load_dataset
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
-from setproctitle import *
-setproctitle('LayerAttnPooler')
 
 import transformers
 from transformers import (
